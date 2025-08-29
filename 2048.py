@@ -2,7 +2,7 @@
 import random
 
 main_grid=[]
-
+# starting to code
 def start_game(grid):
 	for i in range(4):
 		grid.append([0]*4)
