@@ -144,20 +144,24 @@ def move_down(grid):
 	temp_grid=transpose_grid(temp_grid)
 	return temp_grid
 
+def print_grid(grid):
+	print("---------------------")
+	for i in grid:
+		print("|"+"|".join(str(j).center(4) if j !=0 else "    " for j in i)+"|")
+		print("---------------------")
+
 
 #main code
 
 if __name__ == "__main__":
+	
 	main_grid=[]
 	start_game(main_grid)
 	game_status = check_win(main_grid)
 
 	while game_status == "Continue":
 	
-		print(main_grid[0])
-		print(main_grid[1])
-		print(main_grid[2])
-		print(main_grid[3])
+		print_grid(main_grid)
 		print(game_status)
 	
 		player_move=input("enter your move : ").lower()
@@ -177,17 +181,11 @@ if __name__ == "__main__":
 		game_status=check_win(main_grid)
 
 	if game_status == "Won":
-		print(main_grid[0])
-		print(main_grid[1])
-		print(main_grid[2])
-		print(main_grid[3])
+		print_grid(main_grid)
 		print(game_status)
 		
 	elif game_status == "Lost":
-		print(main_grid[0])
-		print(main_grid[1])
-		print(main_grid[2])
-		print(main_grid[3])
+		print_grid(main_grid)
 		print(game_status)
 		
 
