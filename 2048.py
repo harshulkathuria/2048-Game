@@ -1,8 +1,6 @@
 # making a mini game 2048
 import random
 
-main_grid=[]
-
 def start_game(grid):
 	for i in range(4):
 		grid.append([0]*4)
@@ -150,8 +148,8 @@ def move_down(grid):
 
 #main code
 
-main_grid=[]
 if __name__ == "__main__":
+	main_grid=[]
 	print("enering he loop")
 	start_game(main_grid)
 	game_status = check_win(main_grid)
