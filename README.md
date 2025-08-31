@@ -32,5 +32,4 @@ enter your move :
 
 ## Future Ideas
 - Add a score counter  
-- Detect win/lose state  
 - Maybe build a GUI version later
