@@ -173,6 +173,7 @@ while game_status == "Continue":
 	elif player_move == "d":
 		main_grid=move_right(main_grid)
 	else:
+		print("Invalid move")
 		continue
 	add_2(main_grid)
 	game_status=check_win(main_grid)
