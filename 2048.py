@@ -151,7 +151,7 @@ def move_down(grid):
 #main code
 
 main_grid=[]
-if "__name__" == "__main__"":
+if "__name__" == "__main__":
 	start_game(main_grid)
 	game_status = check_win(main_grid)
 
