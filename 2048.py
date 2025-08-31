@@ -12,7 +12,6 @@ def start_game(grid):
 	print("enter 'a' to move left")
 	print("enter 's' to move down")
 	print("enter 'd' to move right")
-	return grid
 
 def find_empty(grid):
 	for i in range(4):
@@ -150,7 +149,6 @@ def move_down(grid):
 
 if __name__ == "__main__":
 	main_grid=[]
-	print("enering he loop")
 	start_game(main_grid)
 	game_status = check_win(main_grid)
 
