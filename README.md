@@ -17,12 +17,17 @@ Use the keys W (up), A (left), S (down), D (right) to move the tiles and try to 
 
 ## Example Gameplay
 ```
-[0][2][0][0]
-[0][0][2][0]
-[0][0][0][0]
-[0][0][0][0]
-
-Enter move (W/A/S/D):
+---------------------
+|    | 2  |    |    |
+---------------------
+|    |    | 2  |    |
+---------------------
+|    |    |    |    |
+---------------------
+|    |    |    |    |
+---------------------
+Continue
+enter your move :
 ```
 
 ## Future Ideas
