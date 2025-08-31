@@ -151,7 +151,8 @@ def move_down(grid):
 #main code
 
 main_grid=[]
-if "__name__" == "__main__":
+if __name__ == "__main__":
+	print("enering he loop")
 	start_game(main_grid)
 	game_status = check_win(main_grid)
 
@@ -180,10 +181,19 @@ if "__name__" == "__main__":
 		game_status=check_win(main_grid)
 
 	if game_status == "Won":
-		print("Won")
+		print(main_grid[0])
+		print(main_grid[1])
+		print(main_grid[2])
+		print(main_grid[3])
+		print(game_status)
+		
 	elif game_status == "Lost":
-		print("Lost")
-
+		print(main_grid[0])
+		print(main_grid[1])
+		print(main_grid[2])
+		print(main_grid[3])
+		print(game_status)
+		
 
 
 	
