@@ -151,37 +151,38 @@ def move_down(grid):
 #main code
 
 main_grid=[]
-start_game(main_grid)
-game_status = check_win(main_grid)
+if "__name__" == "__main__"":
+	start_game(main_grid)
+	game_status = check_win(main_grid)
 
-while game_status == "Continue":
+	while game_status == "Continue":
 	
-	print(main_grid[0])
-	print(main_grid[1])
-	print(main_grid[2])
-	print(main_grid[3])
-	print(game_status)
+		print(main_grid[0])
+		print(main_grid[1])
+		print(main_grid[2])
+		print(main_grid[3])
+		print(game_status)
 	
-	player_move=input("enter your move : ").lower()
+		player_move=input("enter your move : ").lower()
 	
-	if player_move == "w":
-		main_grid=move_up(main_grid)
-	elif player_move == "a":
-		main_grid=move_left(main_grid)
-	elif player_move == "s":
-		main_grid=move_down(main_grid)
-	elif player_move == "d":
-		main_grid=move_right(main_grid)
-	else:
-		print("Invalid move")
-		continue
-	add_2(main_grid)
-	game_status=check_win(main_grid)
+		if player_move == "w":
+			main_grid=move_up(main_grid)
+		elif player_move == "a":
+			main_grid=move_left(main_grid)
+		elif player_move == "s":
+			main_grid=move_down(main_grid)
+		elif player_move == "d":
+			main_grid=move_right(main_grid)
+		else:
+			print("Invalid move")
+			continue
+		add_2(main_grid)
+		game_status=check_win(main_grid)
 
-if game_status == "Won":
-	print("Won")
-elif game_status == "Lost":
-	print("Lost")
+	if game_status == "Won":
+		print("Won")
+	elif game_status == "Lost":
+		print("Lost")
 
 
 
